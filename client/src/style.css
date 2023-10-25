@@ -1,0 +1,25 @@
+.imgOpen {
+  visibility: hidden;
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  transform: translateX(50%);
+  transform: translateY(50%);
+  box-shadow: 0 0 0px 1000px rgba(0, 0, 0, 0.8);
+}
+.inputFile {
+  display: none;
+}
+.img:hover + .imgOpen {
+  visibility: visible;
+  animation: show 0.3s ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
